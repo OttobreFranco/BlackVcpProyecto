@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- link de mi css -->
         <link rel="stylesheet" href="../css/main.css">
-    
-    <title> Contacto - Black VCP </title>
-</head>
+        <!-- link de font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <title> Contacto - Black VCP </title>
+    </head>
 <body>
 
     <!-- banner principal -->
     <header>
         
-        <img src="../img/black crop.jpg" alt="logo de la empresa">
+        <img src="../img/black crop.png" alt="logo de la empresa">
         
         <nav>
             <ul>
@@ -42,46 +44,57 @@
         </nav>
 
     </header>
-
+    
     <!-- contenido del main -->
 
-    <main>
+    <main >
         <h1> Contacto </h1>
-
-        <div>
-            <label for="nombre_apellido">Nombre y apellido:</label>
-            <input type="text" placeholder="Nombre Apellido">
-        </div>
-
-        <div>
-            <label for="email_usuario">Email:</label>
-            <input type="email" placeholder="emai@tuemail.com">
-        </div>
-
-        <div>
-            <label for="consulta">Consulta:</label>
-            <input type="text" placeholder="Ingresar consulta">
-        </div>
-
-        <div>
-            <input type="submit">
-        </div>
-
-    </main>
-
-    <!-- footer  -->
-
-    <footer>
-        <h2> Seguinos en nuestras redes </h2>
-        <div class="redes">
-            <div class="hijo">
-                <a target="_blank" href="https://www.instagram.com/black_vcp/"><img src="../img/Instagram.png" alt="logo de instagram"></a>
+        <div class="formulario">
+            <div>
+                <label for="nombre_apellido">Nombre y apellido:</label>
+                <input type="text" placeholder="Nombre Apellido">
             </div>
-            <div class="hijo" ><a target="_blank" class="hijo" id="blackig" href="https://www.instagram.com/black_vcp/"> <p>@black_vcp</p></a> </div>
+    
+            <div>
+                <label for="email_usuario">Email:</label>
+                <input type="email" placeholder="emai@tuemail.com">
+            </div>
+    
+            <div>
+                <label for="consulta">Consulta:</label>
+                <input type="text" placeholder="Ingresar consulta">
+            </div>
+    
+            <div>
+                <input type="submit">
+            </div>
         </div>
         
-        <h3> Todos los derechos reservados </h3>
-    </footer>
+    </main>
+
+   <!-- footer  -->
+   <footer>
+    <div>
+        <p class="left"> Seguinos en nuestras redes </p>
+    </div>
+    
+   
+    <div class="ig">
+        <a target="_blank" href="https://www.instagram.com/black_vcp/"><img src="../img/instagram-48.png" alt="logo de instagram"></a>
+   
+    
+        <a target="_blank" class="hijo" id="blackig" href="https://www.instagram.com/black_vcp/"> <p>@black_vcp</p>
+        </a>
+    </div>
+         
+
+  
+    
+    
+    <div id="derechos" >
+        <p> Todos los derechos reservados </p>
+    </div>
+</footer>
     
 </body>
 </html>
