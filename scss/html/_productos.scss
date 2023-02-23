@@ -1,0 +1,32 @@
+.caja{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: $color-principal;
+    margin: 1rem 1rem 1rem 1rem;
+    transition: 0.4s;
+
+    .card-title{
+        color: $color-letras;
+    }
+
+    .card-text{
+        color:$color-letras;
+    }
+
+
+    &:hover{
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+}
+
+.btn{
+    background-color: rgb(105, 105, 105);
+    margin: 1rem;
+}
