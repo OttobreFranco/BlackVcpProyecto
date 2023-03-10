@@ -1,5 +1,5 @@
 .formulario{
-    display: flex;
+    @extend %flex;
     flex-direction: column;
     padding: 4rem;
     div{

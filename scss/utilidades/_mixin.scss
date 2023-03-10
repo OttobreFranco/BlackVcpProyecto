@@ -1,0 +1,6 @@
+//mixin con parametros 
+
+@mixin marpad($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
