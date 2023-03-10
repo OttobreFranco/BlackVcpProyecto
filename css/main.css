@@ -83,6 +83,8 @@ main {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 3px 3px 3px #333333; }
+  main .shop img {
+    margin-top: 3rem; }
 
 /* estilos de footer */
 #blackig {
