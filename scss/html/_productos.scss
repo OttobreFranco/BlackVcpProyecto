@@ -1,3 +1,6 @@
+@import "scss/utilidades/mixin";
+
+/* estilos de pagina productos */
 .caja{
     
     grid-template-columns: repeat(3,1fr);
@@ -8,8 +11,9 @@
 
 .card{
     background-color: $color-principal;
-    margin: 1rem 1rem 1rem 1rem;
+    @include marpad(2rem,0rem);
     transition: 0.4s;
+
 
     .card-title{
         color: $color-letras;
@@ -23,6 +27,10 @@
     &:hover{
         transform: scale(1.03);
         transition: 0.4s;
+    }
+    .image-card-otto{
+        height: 300px;
+        object-fit: cover;
     }
 }
 

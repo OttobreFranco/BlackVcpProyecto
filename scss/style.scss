@@ -1,4 +1,6 @@
 @import "utilidades/mixin";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 
 /* reset */ 
 *{
@@ -13,6 +15,8 @@
 @import "html/productos";
 @import "html/contacto";
 @import "html/home";
+@import "html/novedades";
+
 
 
 
@@ -36,11 +40,13 @@ header{
             a{
                 color: $color-letras;
                 text-decoration: none;
+                &:hover{
+                color: $color-fondo;
+                }
             }
             &:hover{
                 transform: scale(1.09);
                 transition: 0.4s;
-                text-decoration: none;
                 
             }
            
@@ -82,6 +88,7 @@ main{
     .shop img{
         margin-top: 3rem;
     }
+    
 }
 
 /* estilos de footer */
