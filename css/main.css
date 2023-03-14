@@ -70,7 +70,7 @@ header {
         color: #ececec;
         text-decoration: none; }
         header nav ul li a:hover {
-          color: #c9bfb3 !important; }
+          color: #c8b6a6 !important; }
       header nav ul li:hover {
         transform: scale(1.09);
         transition: 0.4s; }
@@ -79,7 +79,7 @@ header {
 main {
   text-align: center;
   min-height: 80vh;
-  background-color: #c9bfb3; }
+  background-color: #c8b6a6; }
   main h1 {
     margin: 0px;
     padding: 1rem; }
