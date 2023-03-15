@@ -61,7 +61,7 @@ main{
     min-height: 80vh;
     background-color: $color-fondo;
     h1{
-        @include marpad(0px, 1rem);
+        @include marpad(0px, 2rem);
         
     }
     h3{
@@ -85,7 +85,7 @@ main{
     }
     
     .shop img{
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
     
 }
