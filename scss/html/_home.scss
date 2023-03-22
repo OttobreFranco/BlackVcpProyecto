@@ -1,6 +1,43 @@
 /* estilos de pagina home */
 
 main{
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      
+      .flex-items:nth-child(1) {
+        display: block;
+        width: 50rem;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: center;
+        order: 0;
+      }
+      
+      .flex-items:nth-child(2) {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: center;
+        order: 0;
+        .home-img{
+            border-radius: 2rem;
+            box-sizing: content-box ; 
+            width: 50rem;
+            block-size: 40rem;
+            margin: 3rem;
+            object-fit: cover;
+            border: 4px solid black;
+        }
+      }
     p{
         font-size: 1.3rem;
     }

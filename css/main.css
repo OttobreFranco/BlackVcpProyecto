@@ -40,7 +40,65 @@
   .formulario div {
     padding: 0.5rem; }
 
+.flex-container-contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: auto;
+  align-content: auto; }
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0; }
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 1rem; }
+
 /* estilos de pagina home */
+main .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+main .flex-items:nth-child(1) {
+  display: block;
+  width: 50rem;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0; }
+
+main .flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0; }
+  main .flex-items:nth-child(2) .home-img {
+    border-radius: 2rem;
+    box-sizing: content-box;
+    width: 50rem;
+    block-size: 40rem;
+    margin: 3rem;
+    object-fit: cover;
+    border: 4px solid black; }
+
 main p {
   font-size: 1.3rem; }
 
@@ -130,4 +188,6 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 33%); }
   .card {
-    justify-self: center; } }
+    justify-self: center; }
+  .home-img {
+    display: none; } }
