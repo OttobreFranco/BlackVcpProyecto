@@ -4,7 +4,7 @@
   padding: 0px;
   box-sizing: border-box; }
 
-.caja, .formulario, header, header nav ul, .ig {
+.caja, .formulario, .ig {
   display: flex; }
 
 /* estilos de pagina productos */
@@ -35,8 +35,7 @@
 
 /* estilos de pagina contacto */
 .formulario {
-  flex-direction: column;
-  padding: 4rem; }
+  flex-direction: row; }
   .formulario div {
     padding: 0.5rem; }
 
@@ -65,6 +64,7 @@
   order: 0;
   margin: 1rem; }
 
+/* mq (media queries) de tablet */
 /* estilos de pagina home */
 main .flex-container {
   display: flex;
@@ -114,22 +114,42 @@ main .shop img, main .shop p {
     transition: 0.4s; }
 
 /* estilos de header */
+.main-header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
 header {
   color: whitesmoke;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black; }
-  header nav ul {
-    list-style: none;
-    gap: 1.3rem; }
-    header nav ul li {
-      transition: 0.4s; }
-      header nav ul li a {
+  background-color: black;
+  flex-wrap: wrap; }
+  header .navbar {
+    width: 960px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto; }
+  header .main-header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  header #options {
+    justify-content: flex-end; }
+  header .main-nav ul {
+    text-align: center;
+    list-style: none; }
+    header .main-nav ul li {
+      transition: 0.4s;
+      display: inline; }
+      header .main-nav ul li a {
         color: #ececec;
-        text-decoration: none; }
-        header nav ul li a:hover {
-          color: #c8b6a6 !important; }
-      header nav ul li:hover {
+        text-decoration: none;
+        display: inline-block;
+        padding: .3em 1.5em; }
+        header .main-nav ul li a:hover {
+          color: #c8b6a6; }
+      header .main-nav ul li:hover {
         transform: scale(1.09);
         transition: 0.4s; }
 
@@ -180,9 +200,12 @@ footer {
 
 /* mq (media queries) de tablet */
 @media screen and (max-width: 1024px) {
-  header nav ul {
-    flex-direction: column;
-    padding: 1rem; }
+  /*
+    header nav ul{
+        flex-direction: column;
+        padding: 1rem;
+    }
+*/
   .caja {
     display: grid;
     grid-template-columns: 1fr;

@@ -21,26 +21,50 @@
 
 
 /* estilos de header */
+.main-header .navbar{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 
 header{
-    @extend %flex;
     color: whitesmoke;
-    justify-content: space-around;
-    align-items: center;
     background-color: $color-principal;
-    nav ul{
-        list-style: none;
-        @extend %flex;
-        gap: 1.3rem;
+    flex-wrap:wrap;
+    
+    .navbar{
+        width: 960px;
+        max-width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .main-header .navbar{
+        display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
         
+    }
+    
+    #options{
+        justify-content: flex-end;
+    }
+
+    .main-nav ul{
+        text-align: center;
+        list-style: none;
         li{
             transition: 0.4s;
-            
+            display: inline;
             a{
                 color: $color-letras;
                 text-decoration: none;
+                display: inline-block;
+	            padding: .3em 1.5em;
                 &:hover{
-                color: $color-fondo !important;
+                color: $color-fondo;
                 }
             }
             &:hover{
@@ -48,8 +72,6 @@ header{
                 transition: 0.4s;
                 
             }
-           
-        
         }
     }
 }
@@ -120,12 +142,12 @@ footer{
 /* mq (media queries) de tablet */
 @media screen and (max-width: 1024px) {
 
-
+    /*
     header nav ul{
         flex-direction: column;
         padding: 1rem;
     }
-
+*/
     .caja{
     
         display: grid;
