@@ -37,7 +37,7 @@ header{
         width: 960px;
         max-width: 100%;
         margin: 0 auto;
-        padding: 0;
+        padding: 1rem;
     }
 
     .main-header .navbar{
@@ -45,7 +45,6 @@ header{
 	    align-items: center;
 	    justify-content: space-around;
 	    flex-wrap: wrap;
-        
     }
     
     #options{
@@ -62,7 +61,7 @@ header{
                 color: $color-letras;
                 text-decoration: none;
                 display: inline-block;
-	            padding: .3rem 1.4em;
+	            padding: .5rem 1.24em;
                 &:hover{
                 color: $color-fondo;
                 }
