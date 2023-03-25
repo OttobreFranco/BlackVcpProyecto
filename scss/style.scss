@@ -36,8 +36,8 @@ header{
     .navbar{
         width: 960px;
         max-width: 100%;
-        padding: 10px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .main-header .navbar{
@@ -62,7 +62,7 @@ header{
                 color: $color-letras;
                 text-decoration: none;
                 display: inline-block;
-	            padding: .3em 1.5em;
+	            padding: .3rem 1.4em;
                 &:hover{
                 color: $color-fondo;
                 }

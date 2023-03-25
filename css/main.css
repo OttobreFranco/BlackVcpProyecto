@@ -127,8 +127,8 @@ header {
   header .navbar {
     width: 960px;
     max-width: 100%;
-    padding: 10px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0; }
   header .main-header .navbar {
     display: flex;
     align-items: center;
@@ -146,7 +146,7 @@ header {
         color: #ececec;
         text-decoration: none;
         display: inline-block;
-        padding: .3em 1.5em; }
+        padding: .3rem 1.4em; }
         header .main-nav ul li a:hover {
           color: #c8b6a6; }
       header .main-nav ul li:hover {
